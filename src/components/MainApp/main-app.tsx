@@ -15,6 +15,7 @@ const MainApp = () => {
         const char = item[i];
         const charInAlphabet = Alphabet[char];
         if (char === "ی") {
+          if (item.length === 1) continue;
           if (i === 0 || i !== item.length - 1) {
             count += 2;
             continue;
